@@ -1,0 +1,1087 @@
+/* ############################################################ */
+/* ########         INDEX                        ############## */
+/* ############################################################ */
+
+
+/* ########         [01]  COMMON STYLES          ############## */
+/* ########         [02]  DASH WRAPPERS          ############## */
+/* ########         [03]  DASH HERADER           ############## */
+/* ########         [04]  DASH BODY              ############## */
+/* ########         [05]  SAVE BOX               ############## */
+/* ########         [06]  CUSTOMER TABS          ############## */
+/* ########         [07]  String Generator       ############## */
+/* ########         [08]  PAGE LINKS             ############## */
+/* ########         [09]  KEY CODES              ############## */
+/* ########         [10]  DASH NAV               ############## */
+/* ########         [11]  CUSTOMER DETAILS       ############## */
+
+/* ########         [12]  MAP                    ############## */
+
+
+/* ########         [13]  CSV IMPORT             ############## */
+
+
+/* ########         [01]  COMMON STYLES          ############## */
+
+
+
+
+html
+{
+    background: #f5f3f1;
+}
+
+
+.roo-box
+{
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-radius: 3px;
+}
+
+.roo-box.roo-light
+{
+    padding: 0;
+}
+
+.roo-light
+{
+    border: 1px solid rgba(0,0,0,0,.1);
+    border-radius: 3px;
+    background: #fff;
+}
+
+.roo-colored
+{
+    background: #C1272C;
+}
+
+.roo-dark
+{
+    background: #000000;
+}
+
+
+
+
+/* ########         [02]  DASH WRAPPERS          ############## */
+#roo-dashboard-wrapper
+{
+    margin-left: -20px;
+}
+
+
+
+
+/* ########         [03]  DASH HEADER             ############## */
+#roo-dashboard-header
+{
+    padding: 40px 40px 10px 40px;
+}
+
+#roo-dashboard-header a{
+  float: right;
+  background: #C1272C;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#roo-dashboard-header a:hover{
+  background: #000;
+}
+
+
+
+#roo-dashboard-header span
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 48px;
+
+    display: inline-block;
+
+    width: 50px;
+    height: 57px;
+    margin-right: 20px;
+
+    text-align: center;
+    vertical-align: top;
+
+    color: #fff;
+    border-radius: 10px;
+    background: url(../img/logo.png) no-repeat center;
+}
+
+#roo-dashboard-header h1
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: top;
+
+    color: #262626;
+}
+
+
+
+/* ########         [04]  DASH BODY             ############## */
+#roo-main-body
+{
+    padding: 0 40px;
+}
+
+#roo-admin-dash-nav
+{
+    margin: 0 40px 20px 40px;
+    padding: 20px;
+
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    background: #fff;
+}
+
+#roo-main-body-left,
+#roo-main-body-right
+{
+    display: inline-block;
+
+    width: 25%;
+
+    vertical-align: top;
+}
+
+#roo-main-body-center
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 49%;
+    padding: 0 20px;
+
+    vertical-align: top;
+}
+
+.box-header
+{
+    padding: 20px;
+
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    background: rgba(0,0,0,.01);
+}
+
+.box-header h3
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 0;
+
+    text-transform: uppercase;
+}
+
+.box-footer
+{
+    padding: 10px;
+
+    text-align: right;
+
+    border-radius: 0 0 3px 3px;
+    background: #3b3c3d;
+}
+
+.box-footer a
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+
+    display: inline-block;
+
+    padding: 2px 10px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-radius: 3px;
+    background: #ff6b0a;
+}
+
+.box-footer a:hover
+{
+    color: #262626;
+    background: #fff;
+}
+
+
+.box-body
+{
+    padding: 10px 20px;
+}
+
+.box-body label
+{
+    display: block;
+}
+
+.box-body select
+{
+    display: inline-block;
+
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+
+    cursor: pointer;
+
+    z-index: 1;
+
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: none;
+    background: url(../img/sort.png) no-repeat 96% 50%;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.roo-select-box
+{
+    position: relative;
+}
+
+.roo-select-box label
+{
+    display: inline-block;
+    width: calc(100% - 40px);
+}
+
+.roo-select-box label::before
+{
+    position: absolute;
+    top: 1px;
+    left: -1px;
+
+    width: 17px;
+    height: 17px;
+
+    z-index: 1;
+
+    content: '';
+
+    background: url(../img/unchecked.png) no-repeat center;
+}
+
+.roo-select-box input[type=checkbox]
+{
+    position: relative;
+    z-index: 5;
+
+    opacity: 0;
+}
+
+
+
+.roo-select-box input[type=checkbox]:checked + label::before
+{
+    position: absolute;
+    top: 1px;
+    left: -1px;
+
+    width: 17px;
+    height: 17px;
+
+    content: '';
+
+    background: url(../img/checked.png) no-repeat center;
+}
+
+
+.roo-click-to-gen{
+  position: absolute;
+  top: 0;
+  right: -20px;
+  color: #FF6B0A;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+/* ########         [05]  SAVE BOX               ############## */
+
+
+.roo-update-message
+{
+    position: fixed;
+    z-index: 100000;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 10px 0;
+
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+    -webkit-transform: translateY(200px);
+       -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+         -o-transform: translateY(200px);
+            transform: translateY(200px);
+    text-align: center;
+
+    background: #000000;
+}
+
+.roo-update-message.active
+{
+    -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+         -o-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.roo-update-message input
+{
+    height: auto;
+    padding: 10px 25px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background: #C1272C;
+}
+
+.roo-update-message input:hover
+{
+    color: #262626;
+    background: #fff;
+}
+
+.roo-dash-update-message
+{
+    margin: 20px 40px 0 20px;
+    padding: 10px 0;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background: #ff6b0a;
+}
+
+.box-body input[type=text]{
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: none;
+  background: #fff;
+  width: 100%;
+}
+
+
+
+/* ########         [06]  CUSTOMER TABS          ############## */
+ul.roo-cust-list
+{
+    display: inline-block;
+
+    margin: 0;
+
+    border-bottom: none;
+}
+
+ul.roo-cust-list li
+{
+    font-weight: 200;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 15px 30px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #3b3c3e;
+}
+
+
+ul.roo-cust-list li a
+{
+    text-decoration: none;
+
+    color: #fff;
+    outline: 0 !important;
+}
+
+ul.roo-cust-list li a:active,
+ul.roo-cust-list li a:focus
+{
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+ul.roo-cust-list li.active
+{
+    background: #ff6b00;
+}
+
+ul.roo-cust-list li:hover
+{
+    background: #ff6b00;
+}
+
+ul.roo-cust-list li.active:hover
+{
+    background: #3b3c3e;
+}
+
+
+
+.roo-customer-body
+{
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: none;
+    background: #fff;
+}
+
+.roo-body-header-list
+{
+    overflow: auto;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: #fdfdfd;
+    position: relative;
+}
+
+.roo-body-header-list li
+{
+    font-size: 12px;
+    font-weight: bold;
+
+    float: left;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.roo-body-body-list
+{
+    font-weight: normal;
+
+    color: rgba(0,0,0,.5);
+    background: transparent;
+}
+
+.roo-body-header-list li.roo-body-header-name
+{
+    width: 28%;
+}
+
+.roo-body-header-list li.roo-body-header-email
+{
+    width: 28%;
+}
+
+.roo-body-header-list li.roo-body-header-ophone
+{
+    width: 18%;
+}
+
+
+.roo-body-header-list li.roo-body-header-intr
+{
+    width: 7%;
+}
+
+.roo-body-header-list li.roo-body-header-intr a
+{
+    padding: 2px 2px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #3b3c3e;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+}
+
+.roo-body-header-list li.roo-body-header-intr a:hover{
+  background: #FF6B0A;
+}
+
+.roo-no-cust-to-show{
+  text-align: center;
+  font-weight: 200;
+  color: #FF6B0A;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
+.roo-body-header-list li.roo-body-header-days
+{
+    width: 7%;
+}
+
+.roo-body-header-list li.roo-body-header-activate
+{
+    width: 12%;
+
+    border: none;
+}
+
+.roo-body-header-list li.roo-body-header-activate a
+{
+    font-size: 11px;
+
+    padding: 5px;
+
+    text-transform: uppercase;
+
+    cursor:pointer;
+
+    color: #fff;
+    background: #ff6b00;
+    border-radius: 3px;
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+}
+
+
+.roo-body-header-list li.roo-body-header-activate a:hover
+{
+  background: #3B3C3E;
+}
+
+
+
+/* ########         [07]  String Generator       ############## */
+.roo-string-generator{
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.roo-string-generator h2{
+  color: #fff;
+  font-weight: 200;
+}
+
+.roo-string-generator input{
+  background: rgba(255,255,255,0.1);
+  border: 0px solid #000;
+  border-radius: 3px;
+  width: 100%;
+  color: #fff;
+  box-shadow: none;
+  text-align: center;
+}
+
+.roo-string-generator a{
+  display: inline-block;
+  padding: 5px 20px;
+  color: #262626;
+  margin: 30px 0 10px 0;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+       -o-transition: all .3s linear;
+          transition: all .3s linear;
+
+  cursor: pointer;
+}
+
+.roo-string-generator a:hover{
+  background: #262626;
+  color: #fff;
+}
+
+
+
+
+/* ########         [08]  PAGE LINKS             ############## */
+
+.roo-dark label{
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.roo-dark{
+  padding: 30px 20px;
+}
+
+.roo-dark select{
+  background: rgba(255,255,255,0.3);
+  border: none;
+  width: 100%;
+  color :#fff;
+  border: none !important;
+  margin-bottom: 30px;
+}
+
+.roo-dark select:last-child{
+  margin: 0;
+}
+
+
+/* ########         [09]  KEY CODES              ############## */
+.roo-three-in-a-row input:first-child{
+  width: calc( 70% - 30px);
+  margin-right: 30px;
+  background: #FDFDFD;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.roo-three-in-a-row input:last-child{
+  width: 28%;
+  background: #FDFDFD;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.past-key-explainer{
+  text-align: center;
+  opacity: 0.6
+}
+
+.roo-generate-url::-webkit-input-placeholder { color:rgba(255,255,255,0.6); font-weight: 200; }
+.roo-generate-url::-moz-placeholder { color:rgba(255,255,255,0.6);  font-weight: 200; } /* firefox 19+ */
+.roo-generate-url:-ms-input-placeholder { color:rgba(255,255,255,0.6);  font-weight: 200; } /* ie */
+.roo-generate-url:-moz-placeholder { color:rgba(255,255,255,0.6); font-weight: 200;  }
+
+.roo-generate-url:focus,
+.roo-generate-url{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ########         [10]  DASH NAV               ############## */
+
+ul.roo-dash-nav{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+ul.roo-dash-nav li{
+  margin: 0;
+  padding: 0;
+  display :inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+ul.roo-dash-nav li a{
+  color: #262626;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+     -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+       -o-transition: all .3s linear;
+          transition: all .3s linear;
+}
+
+ul.roo-dash-nav li a:hover{
+  color: #FF6B0A;
+}
+
+ul.roo-dash-nav li.active:before{
+  position: absolute;
+  bottom: -20px;
+  height: 2px;
+  background: #FF6B0A;
+  width: 100%;
+  content: '';
+}
+
+
+
+/* ########         [11]  CUSTOMER DETAILS       ############## */
+li.roo-customer-details{
+  box-sizing: border-box;
+  width: 90%;
+  border: 1px solid rgba(0,0,0,0.1);
+  float: none;
+  margin: 20px 5% !important;
+  clear: both;
+  display :block;
+  padding: 0 !important;
+  display: none;
+
+}
+
+li.roo-customer-details h4{
+  margin: 0 0 30px 0;
+  padding: 10px 0;
+  text-align: center;
+  background: #FDFDFD;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.roo-interest-block{
+  margin: 0 20px 20px 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #FDFDFD;
+  padding-bottom: 20px;
+}
+
+.roo-interest-block h5{
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  background: rgba(0,0,0,0.01);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.roo-single-interest{
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  text-align: left;
+  text-indent: 10px;
+}
+
+
+.roo-customer-halfbox{
+  width: calc(49.5% - 40px);
+  display: inline-block;
+  vertical-align: top;
+  text-indent: 10px;
+  text-align: left;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #FDFDFD;
+  margin: 0 20px 20px 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.roo-customer-halfbox h5{
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  background: rgba(0,0,0,0.01);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.roo-plan-type{
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  background: #FF6B0A;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  line-height: 16px;
+  font-size: 11px !important;
+  text-align: center;
+  border-radius: 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  text-transform: none !important;
+}
+
+.roo-plan-type .dashicons{
+  font-size: 11px !important;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  position: relative;
+  left: -2px;
+}
+
+
+
+
+/* ########         [12]  MAP                    ############## */
+
+
+
+.mediaone-body-holder{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.mediaone-body-holder ul.mediaone-content-holder:nth-child(even){
+  background: rgba(0,0,0,0.02);
+}
+
+
+ul.mediaone-content-holder,
+ul.mediaone-title-holder{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+ul.mediaone-content-holder li,
+ul.mediaone-title-holder li{
+  display: inline-block;
+  width: 7.3%;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;;
+}
+
+ul.mediaone-content-holder li input{
+  width: 97%;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  background: rgba(0,0,0,0.02);
+  border-radius: 3px;
+  font-size: 11px;
+  height: 22px;
+}
+
+ul.mediaone-content-holder li input.valerror{
+  border: 1px solid #D75452;
+}
+
+.mediaone-deletefield-outer,
+.mediaone-savefield-outer{
+  text-align: center;
+}
+
+.mediaone-deletefield{
+  color: #fff;
+  border: none;
+  background: #D75452;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: none;
+  cursor:pointer;
+}
+
+.mediaone-savefield{
+  color: #fff;
+  border: none;
+  background: #377BB5;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.mediaone-addfield{
+  color: #fff;
+  border: none;
+  background: #5FB760;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.mediaone-mapfield{
+  color: #fff;
+  border: none;
+  background: #FFBA00;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.mediaone-footer-holder{
+  margin-top: 30px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+ul.mediaone-filter{
+  text-align: center;
+}
+
+ul.mediaone-filter li{
+  display: inline-block;
+  background: #fff;
+  padding: 5px 8px;
+  border: 1px solid rgba(0,0,0,0.0.03);
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor:pointer;
+}
+
+ul.mediaone-filter li.filter-active{
+  background: #377BB5;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+ul.mediaone-filter li.mediaone-fullwidth-filter{
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: transparent;
+}
+
+ul.mediaone-filter li.mediaone-filter-clear{
+  border: none;
+  color :#fff;
+  background: #5FB760;
+}
+
+.mediaone-save-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 100000;
+  display: none;
+}
+
+.mediaone-save-mask img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -28px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+
+
+
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+
+/* ########         [13]  CSV IMPORT             ############## */
+.importmessage{
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.importmessage h3{
+  font-weight: 200;
+  text-transform: uppercase;
+  border-bottom: 1px dotted rgba(0,0,0,0.3);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.importmessage button{
+  background: #C1272C;
+  border: none;
+  padding: 20px 40px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.latlongselect{
+  text-align :right;
+}
+
+.latlongselect button{
+  background: #C1272C;
+  border: none;
+  padding: 10px 40px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,44 @@
+/* ############################################################ */
+/* ########         INDEX                        ############## */
+/* ############################################################ */
+
+
+/* ########         [01]  GRID LISTING          ############## */
+/* ########         [02]  SLIDESHOW SHORTCODE   ############## */
+
+/* ########         [01]  GRID LISTING          ############## */
+
+.mediaone-realty-grid-single-property{
+  display: inline-block;
+  width: calc(33% - 30px);
+  margin-right: 30px;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.mediaone-grid .mediaone-property-mls-no{
+  display: inline-block;
+  width: 49.9%;
+  vertical-align: top;
+}
+
+.mediaone-grid .mediaone-property-mls-no{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.mediaone-grid .mediaone-property-price{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  text-align: right;
+}
+
+
+/* ########         [02]  SLIDESHOW SHORTCODE   ############## */
+
+.mediaone-realty-slideshow{
+  width: 100%;
+  position: relative;
+}
